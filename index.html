@@ -1,0 +1,69 @@
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--  JS -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/localization/messages_pt_BR.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/jquery.cpfcnpj.js"></script>
+	<style type="text/css">input.error{border: solid 1px red;}</style>
+    <title>Form</title>
+  </head>
+  <body>
+  	<div class="container">
+  		<h1 style="padding-top:10px" class="text-success">Formulário</h1>
+  		<form id="cadastro" method="post">
+			<div class="col-md-6">
+
+				<div class="form-group">
+					<label for="nome">NOME</label>
+					<input class="form-control" type="text" id="nome" name="nome" placeholder="Nome completo" >
+				</div>
+
+				<div class="form-group">
+					<label for="email">EMAIL</label>
+					<input class="form-control" type="email" id="email" name="email" placeholder="exemplo@exemplo.com" >
+				</div>
+
+				<div class="form-group">
+					<label for="data_nasc">DATA DE NASCIMENTO</label>
+					<input class="form-control" type="date" id="data_nasc" name="data_nasc" placeholder="Somente números" >
+				</div>
+
+				<div class="form-group">
+					<label for="instagran">INSTAGRAN</label>
+					<input class="form-control" type="text" id="instagran" name="instagran" placeholder="@nomedousuario" >
+				</div>
+
+				<div class="form-group">
+					<label for="cpfCnpj">CPF / CNPJ</label>
+					<input class="form-control" id="cpfCnpj" type="text" data-msg="Este campo é requerido.">
+					<small id="cpfCnpjHelp" class="form-text text-danger invisible">Inválido</small>
+				</div>
+
+				<div class="form-group">
+					<label for="celular">CELULAR</label>
+					<input class="form-control" type="text" id="celular" name="celular" placeholder="Somente números" >
+				</div>
+
+				<div class="form-group">
+					<label for="codigo">CÓDIGO</label>
+					<input class="form-control" type="text" id="codigo" name="codigo" placeholder="Somente letras e números" >
+				</div>
+
+				<button type="submit" class="btn btn-success float-right">Enviar</button>				
+			</div>  			
+  		</form>
+  	</div>
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
